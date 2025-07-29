@@ -80,7 +80,7 @@ a:hover {
 
 /* --- Layout Containers --- */
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -97,7 +97,7 @@ a:hover {
   margin-bottom: 50px;
   padding-bottom: 15px;
   border-bottom: 2px solid var(--border-color-light);
-  display: inline-block;
+  display: block;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -277,7 +277,7 @@ a:hover {
 .about {
   background-color: var(--secondary-color);
   margin: 40px auto;
-  max-width: 1000px;
+  max-width: 1200px;
   border-radius: 12px;
   box-shadow: 0 8px 25px var(--shadow-light);
   text-align: center;
@@ -307,7 +307,7 @@ a:hover {
 
 .about-text-container {
   flex: 1;
-  max-width: 1000px;
+  max-width: 1200px;
   text-align: left;
 }
 
@@ -381,7 +381,7 @@ a:hover {
 .education {
   background-color: var(--secondary-color);
   margin: 40px auto;
-  max-width: 1000px;
+  max-width: 1200px;
   border-radius: 12px;
   box-shadow: 0 8px 25px var(--shadow-light);
   padding: 60px 20px;
