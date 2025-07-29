@@ -232,7 +232,7 @@ a:hover {
   background: linear-gradient(to right, purple, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 3.5em;
   margin-bottom: 15px;
   color: var(--text-light);
