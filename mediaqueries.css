@@ -1,0 +1,235 @@
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1200px) {
+  /* Adjustments for medium-sized screens like tablets */
+  .container {
+    padding: 0 15px; /* Slightly less padding */
+  }
+
+  .introduction h1 {
+    font-size: 3em;
+  }
+
+  .introduction p {
+    font-size: 1.3em;
+  }
+
+  .section-title {
+    font-size: 2.2em;
+  }
+
+  /* About Section */
+  .about {
+    margin: 30px 15px; /* Adjust margin for about section */
+    padding: 50px 15px;
+  }
+
+  .about-image-container img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-text-container h3 {
+    font-size: 1.6em;
+  }
+
+  .about-text-container p {
+    font-size: 1em;
+  }
+
+  /* Technologies Section */
+  .technologies {
+    margin: 30px 15px;
+    padding: 50px 15px;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(80px, 1fr)
+    ); /* Smaller min width for icons */
+    gap: 15px;
+  }
+
+  .icon-card i {
+    font-size: 3em; /* Slightly smaller icons */
+  }
+
+  /* Education Section */
+  .education {
+    margin: 30px 15px;
+    padding: 50px 15px;
+  }
+
+  .education-grid {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    ); /* Adjust min width for education cards */
+    gap: 20px;
+  }
+
+  /* Projects Section */
+  .projects {
+    margin: 30px 15px;
+    padding: 50px 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile-first approach: Hide desktop nav, show hamburger */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex; /* Show hamburger menu */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Padding for hamburger nav */
+  }
+
+  .introduction {
+    padding: 60px 15px;
+  }
+
+  .introduction h1 {
+    font-size: 2.2em; /* Smaller font for mobile */
+  }
+
+  .introduction p {
+    font-size: 1.1em;
+  }
+
+  .cta-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px;
+  }
+
+  .btn {
+    width: 80%; /* Make buttons take more width */
+    margin: 0 auto; /* Center buttons */
+  }
+
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 40px 15px;
+    margin: 20px 10px; /* Tighter margins on mobile */
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack image and text */
+    gap: 30px;
+  }
+
+  .about-image-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text-container {
+    text-align: center; /* Center text on mobile */
+    max-width: 100%;
+  }
+
+  .about-text-container h3 {
+    font-size: 1.4em;
+  }
+
+  /* Technologies Section */
+  .technologies {
+    padding: 40px 15px;
+    margin: 20px 10px;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(70px, 1fr)
+    ); /* Further adjustment for mobile icons */
+    gap: 10px;
+  }
+
+  .icon-card i {
+    font-size: 2.8em;
+  }
+  .icon-card p {
+    font-size: 0.8em;
+  }
+
+  /* Education Section */
+  .education {
+    padding: 40px 15px;
+    margin: 20px 10px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr; /* Single column for education cards */
+    gap: 15px;
+  }
+
+  /* Projects Section */
+  .projects {
+    padding: 40px 15px;
+    margin: 20px 10px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* Single column for projects */
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Extra small screens / narrower phones */
+  .introduction h1 {
+    font-size: 1.8em;
+  }
+
+  .introduction p {
+    font-size: 1em;
+  }
+
+  .hamburger-icon {
+    width: 25px;
+    height: 18px;
+  }
+
+  .section-title {
+    font-size: 1.8em;
+  }
+
+  .about-image-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-text-container h3 {
+    font-size: 1.2em;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+  .icon-card i {
+    font-size: 2.2em;
+  }
+
+  .education-card h3 {
+    font-size: 1.1em;
+  }
+
+  .project-card h3 {
+    font-size: 1.2em;
+  }
+}

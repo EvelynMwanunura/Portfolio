@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evelyn N. - Aspiring Software Engineer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="headContainer">
+      <div class="container">
+        <nav id="desktop-nav">
+          <div class="logo">Evelyn N.</div>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#technologies">Technologies</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav id="hamburger-nav">
+          <div class="logo"></div>
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+              <ul>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li>
+                  <a href="#technologies" onclick="toggleMenu()"
+                    >Technologies</a
+                  >
+                </li>
+                <li>
+                  <a href="#education" onclick="toggleMenu()">Education</a>
+                </li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section class="introduction">
+      <h1>HI, I'M EVELYN NOMSA MWANUNURA</h1>
+      <p>Aspiring Software Engineer</p>
+      <div class="cta-buttons">
+        <button
+          class="btn btn-primary"
+          onclick="window.open('./assets/EvelynMwanunuraResume.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-secondary" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <a href="#about" class="scroll-down-arrow">
+        <img src="./assets/arrow.png" alt="Scroll down arrow" />
+      </a>
+    </section>
+
+    <section id="about" class="about section-padding container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image-container">
+          <img src="./assets/evelyn1.png" alt="Evelyn N. Profile Picture" />
+        </div>
+        <div class="about-text-container">
+          <h3>My Journey into Tech</h3>
+          <p>
+            Hi, I’m Evelyn, an aspiring software engineer with a passion for
+            building impactful digital solutions. My journey into tech is driven
+            by a desire to blend creativity with logical problem-solving. While
+            my background includes valuable experience in healthcare and IT
+            support, I'm currently fully immersed in expanding my technical
+            skillset through hands-on projects and dedicated study.
+          </p>
+          <p>
+            I've been actively engaged in front-end development for over a year,
+            specializing in creating responsive and accessible web applications
+            using HTML, CSS, and JavaScript. My previous roles have honed my
+            attention to detail, communication skills, and a user-centric
+            approach, which I now bring to software development.
+          </p>
+          <p>
+            I'm constantly learning and exploring new technologies in this
+            fast-paced industry, eager to contribute to innovative projects and
+            make a tangible difference through code.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="technologies" class="technologies section-padding container">
+      <h2 class="section-title">Technologies I've Worked With</h2>
+      <div class="tech-icons">
+        <div class="icon-card">
+          <i class="devicon-html5-plain colored"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-css3-plain colored"></i>
+          <p>CSS3</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <p>JavaScript</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-react-original colored"></i>
+          <p>React</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-php-plain colored"></i>
+          <p>PHP</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-nodejs-plain colored"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <p>MySQL</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-azuresqldatabase-original colored"></i>
+          <p>Azure SQL</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-tailwindcss-plain colored"></i>
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-git-plain colored"></i>
+          <p>Git</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-github-original colored"></i>
+          <p>GitHub</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-jira-plain colored"></i>
+          <p>Jira</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-vscode-plain colored"></i>
+          <p>VS Code</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-linuxmint-plain colored"></i>
+          <p>Linux</p>
+        </div>
+        <div class="icon-card">
+          <i class="devicon-netlify-original colored"></i>
+          <p>Netlify</p>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <section id="technologies" class="technologies section-padding container">
+      <h2 class="section-title">Technologies</h2>
+      <div class="tech-icons">
+        <div class="icon-card">
+          <i class="devicon-html5-plain colored"></i>
+          <div class="tech-info">
+            <p>HTML5</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-css3-plain colored"></i>
+          <div class="tech-info">
+            <p>CSS3</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <div class="tech-info">
+            <p>JavaScript</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-react-original colored"></i>
+          <div class="tech-info">
+            <p>React</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 35%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-php-plain colored"></i>
+          <div class="tech-info">
+            <p>PHP</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 20%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-nodejs-plain colored"></i>
+          <div class="tech-info">
+            <p>Node.js</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-mysql-plain colored"></i>
+          <div class="tech-info">
+            <p>MySQL</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-azuresqldatabase-original colored"></i>
+          <div class="tech-info">
+            <p>Azure SQL</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-tailwindcss-plain colored"></i>
+          <div class="tech-info">
+            <p>Tailwind CSS</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-git-plain colored"></i>
+          <div class="tech-info">
+            <p>Git</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-github-original colored"></i>
+          <div class="tech-info">
+            <p>GitHub</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-jira-plain colored"></i>
+          <div class="tech-info">
+            <p>Jira</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-vscode-plain colored"></i>
+          <div class="tech-info">
+            <p>VS Code</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-linuxmint-plain colored"></i>
+          <div class="tech-info">
+            <p>Linux</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="icon-card">
+          <i class="devicon-netlify-original colored"></i>
+          <div class="tech-info">
+            <p>Netlify</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education section-padding container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3>BSc in Software Engineering</h3>
+          <p>Zimbabwe Open University | In Progress (Expected 2027)</p>
+          <p>
+            <em
+              >Core Modules: Software Engineering, Data Structures,
+              Algorithms</em
+            >
+          </p>
+        </div>
+
+        <div class="education-card">
+          <h3>Full-Stack Software Development Bootcamp</h3>
+          <p>Code Your Future | 2024 – Present (Expected 2025)</p>
+          <p>
+            <em>
+              In-depth training in JavaScript, React, Node.js, Express, Git,
+              GitHub, REST APIs, Agile methodologies, and Test-Driven
+              Development (TDD). Includes real-world projects, code reviews, and
+              collaboration via GitHub and Kanban boards.
+            </em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section
+      id="certifications"
+      class="certifications section-padding container"
+    >
+      <h2 class="section-title">Certifications</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3>Professional Foundations</h3>
+          <p>ALX | Issued: 2025</p>
+          <p>
+            <em
+              >Training in essential workplace skills, communication, and
+              leadership for tech professionals.</em
+            >
+          </p>
+          <div class="btnDiv">
+            <a
+              href="./assets/alxcert.jpg"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="education-card">
+          <h3>Advanced Web Development</h3>
+          <p>SheCodes | Issued: 2024</p>
+          <p>
+            <em
+              >Advanced-level training in HTML, CSS, JavaScript, React, and
+              Node.js. Focus on building responsive, accessible web
+              applications.</em
+            >
+          </p>
+          <div class="btnDiv">
+            <a
+              href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E2847F4F1CD285BEFE770256FCDC744643840948868448559504267B89B32EC9"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="education-card">
+          <h3>Oracle Certified Foundations Associate</h3>
+          <p>Oracle | Issued: 2025</p>
+          <p>
+            <em>
+              Demonstrated knowledge of core OCI services including Compute,
+              Storage, Networking, Database, Developer Tools, Analytics, AI,
+              Observability, and Hybrid Cloud.
+            </em>
+          </p>
+          <div class="btnDiv">
+            <a
+              href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E2847F4F1CD285BEFE770256FCDC744643840948868448559504267B89B32EC9"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="education-card">
+          <h3>Intro to Programming</h3>
+          <p>Code Your Future | Issued: 2025</p>
+          <p>
+            <em>
+              Covered pair programming, Kanban, TDD, GitHub collaboration,
+              debugging, and Gen AI Prompting. Emphasized real-world workflow
+              practices like ticketing and code reviews.
+            </em>
+          </p>
+
+          <div class="btnDiv">
+            <a
+              href="https://www.credential.net/c64a7713-9a0b-4ceb-aa7d-e18f51fa37f9#acc.WvAcVu5w"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="education-card">
+          <h3>Web Development</h3>
+          <p>SheCodes | Issued: 2024</p>
+          <p>
+            <em
+              >Learned HTML, CSS, JavaScript, React, and API usage. Built
+              responsive and accessible projects from scratch.</em
+            >
+          </p>
+          <div class="btnDiv">
+            <a
+              href="https://www.shecodes.io/certificates/7575a17a93ecab2d0d1fb946836f715e"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+
+        <div class="education-card">
+          <h3>Intro to Digital</h3>
+          <p>Code Your Future | Issued: 2024</p>
+          <p>
+            <em
+              >Covered HTML, CSS, JavaScript, React basics, and
+              spreadsheet-based data evaluation. Built and deployed beginner
+              websites.</em
+            >
+          </p>
+          <div class="btnDiv">
+            <a
+              href="https://www.credential.net/b12e388a-89db-4ac7-a8f3-6202c77a52d9#acc.jIisbxNU"
+              target="_blank"
+              class="btn btn-secondary"
+              >View Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-padding container">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="./assets/hrapp.png" alt="Project 1 Screenshot" />
+          <h3>HR Management App</h3>
+          <p>
+            This HR Management System was built specifically for internal use at
+            my current company to streamline HR operations for clinical staff.
+            It is a full-stack web application developed using HTML, CSS,
+            JavaScript, and PHP, with data stored and retrieved from a MySQL
+            database hosted locally on XAMP.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+            <a href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="/assets/codewars.png" alt="Project 2 Screenshot" />
+          <h3>Codewars Leaderboard 2</h3>
+          <p>
+            Description of Project 2. (e.g., A real-time chat application using
+            WebSockets and Express.js).
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+            <a href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./assets/tvMazeProject.png" alt="Project 3 Screenshot" />
+          <h3>TV Project</h3>
+          <p>
+            A dynamic web application built using vanilla JavaScript, HTML, and
+            CSS that fetches and displays data from the TV Maze API. The project
+            allows users to browse TV shows, view detailed information (such as
+            episodes, ratings, genres, and summaries), and search for specific
+            shows in real-time.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
+            <a href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/calendarProject.png" alt="Project 3 Screenshot" />
+          <h3>Commemorative Days Calendar</h3>
+          <p>
+            I built a commemorative calendar that displays special days from a
+            JSON file. Using JavaScript, I calculated the correct calendar date
+            and day of the week for each event. I also added functionality to
+            generate downloadable .ics calendar files, allowing users to add
+            events to their personal calendars. The events were dynamically
+            rendered on a styled, interactive calendar interface.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://days-calendar-project-cyf.netlify.app/"
+              target="_blank"
+              class="btn btn-primary"
+              >Live Demo</a
+            >
+            <a href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/spcedRepetition.png" alt="Project 3 Screenshot" />
+          <h3>Spaced Repetition Tracker</h3>
+          <p>
+            I created a spaced repetition tracker to help users manage their
+            revision schedules. Users can enter topics and select a date, and
+            the app calculates future revision dates based on spaced repetition
+            principles. All data is stored in local storage, so users can return
+            and view their agendas without needing to log in. The interface is
+            built with HTML and JavaScript and updates dynamically as users
+            interact with the app.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://https://spaced-repetition-tracker-teamproject.netlify.app//"
+              target="_blank"
+              class="btn btn-primary"
+              >Live Demo</a
+            >
+            <a href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="./assets/hometown.png" alt="Project 3 Screenshot" />
+          <h3>Home Town Page</h3>
+          <p>
+            I created a spaced repetition tracker to help users manage their
+            revision schedules. Users can enter topics and select a date, and
+            the app calculates future revision dates based on spaced repetition
+            principles. All data is stored in local storage, so users can return
+            and view their agendas without needing to log in. The interface is
+            built with HTML and JavaScript and updates dynamically as users
+            interact with the app.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://https://spaced-repetition-tracker-teamproject.netlify.app//"
+              target="_blank"
+              class="btn btn-primary"
+              >Live Demo</a
+            >
+            <a href="#" target="_blank" class="btn btn-secondary">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:evelynmwanunura@gmail.com"
+              >evelynmwanunura@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+27814455839">+27 81 445 5839</a>
+          </p>
+          <div class="social-links">
+            <a
+              href="https://linkedin.com/in/evelyn-n"
+              target="_blank"
+              aria-label="LinkedIn Profile"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/evelyn-n"
+              target="_blank"
+              aria-label="GitHub Profile"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Evelyn N. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
