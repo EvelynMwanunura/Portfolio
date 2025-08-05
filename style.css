@@ -484,10 +484,12 @@ a:hover {
 }
 
 .project-card img {
-  max-width: 100%;
+  /*max-width: 100%;*/
+
   border-radius: 6px;
   margin-bottom: 15px;
-  height: 400px;
+  height: 200px;
+  width: auto;
   object-fit: cover;
 }
 
